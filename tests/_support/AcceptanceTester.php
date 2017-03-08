@@ -20,7 +20,6 @@ require_once "Helper/URL_List.php";
 class AcceptanceTester extends \Codeception\Actor
 {
     use _generated\AcceptanceTesterActions;
-
     
     public function goToTheAdminLoginPage() {
         $I = $this;
