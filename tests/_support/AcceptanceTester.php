@@ -21,9 +21,7 @@ class AcceptanceTester extends \Codeception\Actor
 {
     use _generated\AcceptanceTesterActions;
 
-    /**
-     * Define custom actions here
-     */
+    
     public function goToTheAdminLoginPage() {
         $I = $this;
         $I->amOnPage(\Page\Acceptance\AdminURLList::$adminLogin);
