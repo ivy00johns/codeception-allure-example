@@ -1,7 +1,7 @@
 <?php
 // @env firefox
 // @env chrome
-// @env phantom
+// @env phantomjs
 // @group smoke
 $I = new AcceptanceTester($scenario);
 $I->wantTo('verify that I can access the Admin Login page');

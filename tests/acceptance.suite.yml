@@ -28,7 +28,7 @@ env:
                 WebDriver:
                     browser: 'chrome'
                     window_size: maximize
-    phantom:
+    phantomjs:
         modules:
             config:
                 WebDriver:

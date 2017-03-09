@@ -13,18 +13,20 @@ class RoboFile extends \Robo\Tasks
     function test() {
         $this->_exec('codecept run --env chrome');
 
-        $result1 = $this->_exec('allure generate tests/_output/allure-results');
+        $result1 = $this->_exec('allure --quite generate tests/_output/allure-results/ -o tests/_output/allure-report/');
+
         if ($result1->wasSuccessful()) {
-            $this->_exec('allure report open');
+            $this->_exec('allure report open --report-dir tests/_output/allure-report/');
         }
     }
 
     function example() {
-        $this->_exec('codecept run --env chrome --group example');
+        $this->_exec('codecept run --env phantomjs --group example --steps');
 
-        $result1 = $this->_exec('allure generate tests/_output/allure-results');
+        $result1 = $this->_exec('allure generate tests/_output/allure-results/ -o tests/_output/allure-report/');
+
         if ($result1->wasSuccessful()) {
-            $this->_exec('allure report open');
+            $this->_exec('allure report open --report-dir tests/_output/allure-report/');
         }
     }
 }

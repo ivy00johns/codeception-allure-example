@@ -12,7 +12,7 @@ class AccessForgotYourPasswordCest
     /**
      * @env chrome
      * @env firefox
-     * @env phantom
+     * @env phantomjs
      */
     public function shouldLandOnTheForgotYourPasswordPage(AcceptanceTester $I, AdminLogin $adminLogin)
     {
@@ -26,7 +26,7 @@ class AccessForgotYourPasswordCest
     /**
      * @env chrome
      * @env firefox
-     * @env phantom
+     * @env phantomjs
      */
     public function shouldLandOnTheLoginPageWhenBackToSignInIsClicked(AcceptanceTester $I, AdminLogin $adminLogin)
     {
@@ -39,7 +39,7 @@ class AccessForgotYourPasswordCest
     /**
      * @env chrome
      * @env firefox
-     * @env phantom
+     * @env phantomjs
      */
     public function shouldLandOnTheLoginPageWhenTheLogoIsClicked(AcceptanceTester $I, AdminLogin $adminLogin)
     {

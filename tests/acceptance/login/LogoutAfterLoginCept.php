@@ -1,7 +1,7 @@
 <?php
 // @env firefox
 // @env chrome
-// @env phantom
+// @env phantomjs
 $I = new AcceptanceTester($scenario);
 
 $I->wantTo('logout of the Admin area and land on the Login page');

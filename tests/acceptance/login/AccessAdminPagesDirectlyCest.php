@@ -12,7 +12,7 @@ class AccessAdminPagesDirectlyCest
     /**
      * @env chrome
      * @env firefox
-     * @env phantom
+     * @env phantomjs
      * @group slow
      */
     public function shouldBeAbleToAccessEachAdminPageDirectly(AcceptanceTester $I)

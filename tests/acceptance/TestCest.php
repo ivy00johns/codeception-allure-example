@@ -12,14 +12,28 @@ class TestCest
     public function _after(AcceptanceTester $I)
     {
     }
-
+    
     /**
+     * @env phantomjs
+     * @env chrome
      * @group example
      */
     public function accessTheSalesOrdersPage(AcceptanceTester $I)
     {
-        $I->goToTheAdminSalesOrdersPage();
+//        $I->goToTheAdminSalesOrdersPage();
         $I->shouldBeOnTheAdminSalesOrdersPage();
         $I->see('Orders');
+    }
+
+    /**
+     * @env phantomjs
+     * @env chrome
+     * @group example
+     */
+    public function accessTheProductsCatalogPage(AcceptanceTester $I)
+    {
+        $I->goToTheAdminProductsCatalogPage();
+        $I->shouldBeOnTheAdminProductsCatalogPage();
+        $I->see('Catalog');
     }
 }

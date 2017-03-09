@@ -1,7 +1,7 @@
 <?php
 // @env firefox
 // @env chrome
-// @env phantom
+// @env phantomjs
 $I = new AcceptanceTester($scenario);
 
 $I->wantTo('make sure you cannot access Admin pages when NOT logged in');
