@@ -35,6 +35,8 @@
     composer install
     ```
 
+* **You will need to install Allure's CLI tool, please visit this page for instructions**: http://wiki.qatools.ru/display/AL/Allure+Commandline
+
 * Next you will need to start a Selenium server so we can run the tests (This will vary based on your local setup).
 
 
@@ -73,3 +75,9 @@ Edit the following command to change the Tests that the command `robo test` exec
     ...
     $this->_exec('codecept run --env chrome');
     ...
+
+
+
+#### TROUBLESHOOTING
+* TimeZone Error - http://stackoverflow.com/questions/18768276/codeception-datetime-error
+* TimeZone List - http://php.net/manual/en/timezones.america.php
