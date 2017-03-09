@@ -47,6 +47,12 @@
     robo test
     ```
 
+* To kick off an example test with 2 test cases run the following command:
+
+    ```
+    robo example
+    ```
+
 
 ## Testing Environments
 

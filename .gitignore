@@ -5,3 +5,4 @@ composer.lock
 vendor/*
 tests/_output/*
 allure-report/*
+/tests/_support/_generated/
