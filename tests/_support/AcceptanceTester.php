@@ -1092,7 +1092,7 @@ class AcceptanceTester extends \Codeception\Actor
         $I = $this;
 
         try {
-            $I->see('.modal-popup h1 + .action-close');
+            $I->dontSee('.modal-popup h1 + .action-close');
             // Continue to do this if it's present
 
         } catch (Exception $e) {
