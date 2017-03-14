@@ -8,19 +8,16 @@ class TestCest
         $I->goToTheAdminLoginPage();
         $I->loginAsAnExistingAdmin();
     }
-
-    public function _after(AcceptanceTester $I)
-    {
-    }
     
     /**
      * @env phantomjs
      * @env chrome
      * @group example
+     * @group test
      */
     public function accessTheSalesOrdersPage(AcceptanceTester $I)
     {
-//        $I->goToTheAdminSalesOrdersPage();
+        $I->goToTheAdminSalesOrdersPage();
         $I->shouldBeOnTheAdminSalesOrdersPage();
         $I->see('Orders');
     }
@@ -29,6 +26,7 @@ class TestCest
      * @env phantomjs
      * @env chrome
      * @group example
+     * @group test
      */
     public function accessTheProductsCatalogPage(AcceptanceTester $I)
     {

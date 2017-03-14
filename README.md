@@ -1,19 +1,21 @@
-# Welcome to the example Codeception + Allure Test Suite!
+# Welcome to the example of Codeception + Robo + Allure!
 
-## Prereqs
-* Codeception, Allure and Robo are PHP based applications installed via Composer so you will need to have Composer installed in order to run the following. Please visit the [Composer](https://getcomposer.org/) homepage for installation instructions.
+### Prerequisites
+* **Codeception**,**Allure** and **Robo** are PHP based applications installed via **Composer**, so you will need to have **Composer** installed in order to run the following. Please visit the [Composer](https://getcomposer.org/) homepage for installation instructions.
 
-* The Suite needs to be configured in the `.suite.yml` file in the `/tests/` directory depending on the Test Suite that you are working on: `tests/XXXXXXX.suite.yml`
+* Some settings need to be adjusted to meet the build environment settings in the appropriate `XXX.suite.yml` file in the `[PROJECT_ROOT]/tests/` directory: `[PROJECT_ROOT]/tests/XXXXXXX.suite.yml`
 
 
-### /tests/acceptance.suite.yml
+##### [PROJECT_ROOT]/tests/acceptance.suite.yml
+* Edit the following section of code to set the Storefront URL:
+    ```
     ...
     url: "http://127.0.0.1:32769"
     ...
+    ```
 
-
-### /tests/_support/AcceptanceTester.php
-* Edit the following section of code at the bottom of the `AcceptanceTester.php` file if the Admin Credentials differ:
+##### [PROJECT_ROOT]/tests/_support/AcceptanceTester.php
+* Edit the following section of code at the bottom of the `AcceptanceTester.php` file to set the **Admin Credentials**:
 
     ```
     ...
@@ -28,14 +30,14 @@
     ```
 
 ### Running the Tests
-* Once you have Composer installed you will need to install the Project Dependencies. Open a Terminal Window. CD to the Project Directory and run the following command:
+* Open a Terminal Window. CD to the Project Directory. Run the following command to install the project dependencies:
 
     ```
     cd [LOCATION_OF_GITHUB_REPO]
     composer install
     ```
 
-* **You will need to install Allure's CLI tool, please visit this page for instructions**: http://wiki.qatools.ru/display/AL/Allure+Commandline
+* **You will need to install Allure's CLI tool to generate the reports, please visit this page for instructions**: http://wiki.qatools.ru/display/AL/Allure+Commandline
 
 * Next you will need to start a Selenium server so we can run the tests (This will vary based on your local setup).
 
@@ -43,20 +45,35 @@
 * Then open a New Terminal Window.
 
 
-* Finally to kick off the entire E2E Test Suite run the following command:
+* Kick off the entire E2E Test Suite run the following command:
 
     ```
     robo test
     ```
 
-* To kick off an example test with 2 test cases run the following command:
+* To kick off some example tests with 2 test cases run the following command:
 
     ```
     robo example
     ```
 
+### Testing using Robo
 
-## Testing Environments
+* You can run the following test suites using robo:
+
+  * Run the tests marked with **@group chrome**:  `robo chrome`
+  * Run the tests marked with **@group firefox**:  `robo chrome`
+  * Run the tests marked with **@group phantomjs**:  `robo phantomjs`
+
+
+### Allure + Robo
+* You can generate, open or both using robo:
+  * Generate a report from **[PROJECT_ROOT]/tests/_output/allure-results/**: `robo allure:generate`
+  * Open a generate report from **[PROJECT_ROOT]/tests/_output/allure-report**: `robo allure:open`
+  * Generate a report and open it: `robo allure:report`
+
+
+### Testing Environments
 
 * You can run a subset of Tests by editing the `RoboFile.php` or running `codecept` directly:
 
@@ -67,6 +84,7 @@
     ```codecept run --env phantomjs```
 
     ```codecept run --env chrome --group slow```
+
 
 ### RoboFile.php
 
@@ -81,3 +99,6 @@ Edit the following command to change the Tests that the command `robo test` exec
 #### TROUBLESHOOTING
 * TimeZone Error - http://stackoverflow.com/questions/18768276/codeception-datetime-error
 * TimeZone List - http://php.net/manual/en/timezones.america.php
+* System PATH - Make sure you have `vendor/bin/` and `vendor/` listed in your system path so you can run the  `codecept` and `robo` commands directly:
+
+    `sudo nano /etc/private/paths`

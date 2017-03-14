@@ -598,493 +598,493 @@ class AcceptanceTester extends \Codeception\Actor
 
     public function shouldBeOnTheAdminLoginPage() {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminLogin);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminLogin);
     }
 
     public function shouldBeOnTheAdminDashboardPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminDashboard);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminDashboard);
     }
 
     public function shouldBeOnTheForgotYourPasswordPage() {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminForgotYourPassword);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminForgotYourPassword);
     }
 
     // Sales
     public function shouldBeOnTheAdminSalesOrdersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSalesOrders);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSalesOrders);
     }
 
     public function shouldBeOnTheAdminSalesInvoicesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSalesInvoices);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSalesInvoices);
     }
 
     public function shouldBeOnTheAdminSalesShipmentsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSalesShipments);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSalesShipments);
     }
 
     public function shouldBeOnTheAdminSalesCreditMemosPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSalesCreditMemos);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSalesCreditMemos);
     }
 
     public function shouldBeOnTheAdminSalesBillingAgreementsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSalesBillingAgreements);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSalesBillingAgreements);
     }
 
     public function shouldBeOnTheAdminSalesTransactionsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSalesTransactions);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSalesTransactions);
     }
 
     // Products
     public function shouldBeOnTheAdminProductsCatalogPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminProductsCatalog);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminProductsCatalog);
     }
 
     public function shouldBeOnTheAdminProductsCategoriesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminProductsCategories);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminProductsCategories);
     }
 
     // Customers
     public function shouldBeOnTheAdminCustomersAllCustomersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminCustomersAllCustomers);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminCustomersAllCustomers);
     }
 
     public function shouldBeOnTheAdminCustomersNowOnlinePage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminCustomersNowOnline);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminCustomersNowOnline);
     }
 
     // Marketing
     public function shouldBeOnTheAdminMarketingCatalogPriceRulePage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingCatalogPriceRule);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingCatalogPriceRule);
     }
 
     public function shouldBeOnTheAdminMarketingCartPriceRulePage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingCartPriceRules);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingCartPriceRules);
     }
 
     public function shouldBeOnTheAdminMarketingEmailTemplatesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingEmailTemplates);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingEmailTemplates);
     }
 
     public function shouldBeOnTheAdminMarketingNewsletterTemplatePage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterTemplate);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterTemplate);
     }
 
     public function shouldBeOnTheAdminMarketingNewsletterQueuePage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterQueue);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterQueue);
     }
 
     public function shouldBeOnTheAdminMarketingNewsletterSubscribersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterSubscribers);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingNewsletterSubscribers);
     }
 
     public function shouldBeOnTheAdminMarketingURLRewritesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingURLRewrites);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingURLRewrites);
     }
 
     public function shouldBeOnTheAdminMarketingSearchTermsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingSearchTerms);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingSearchTerms);
     }
 
     public function shouldBeOnTheAdminMarketingSearchSynonymsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingSearchSynonyms);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingSearchSynonyms);
     }
 
     public function shouldBeOnTheAdminMarketingSiteMapPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingSiteMap);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingSiteMap);
     }
 
     public function shouldBeOnTheAdminMarketingReviewsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminMarketingReviews);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminMarketingReviews);
     }
 
     // Content
     public function shouldBeOnTheAdminContentPagesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminContentPages);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminContentPages);
     }
 
     public function shouldBeOnTheAdminContentBlocksPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminContentBlocks);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminContentBlocks);
     }
 
     public function shouldBeOnTheAdminContentWidgetsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminContentWidgets);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminContentWidgets);
     }
 
     public function shouldBeOnTheAdminContentConfigurationPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminContentConfiguration);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminContentConfiguration);
     }
 
     public function shouldBeOnTheAdminContentThemesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminContentThemes);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminContentThemes);
     }
 
     public function shouldBeOnTheAdminContentSchedulePage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminContentSchedule);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminContentSchedule);
     }
 
     // Reports
     public function shouldBeOnTheAdminReportsProductsInCartPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsProductsInCart);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsProductsInCart);
     }
 
     public function shouldBeOnTheAdminReportsSearchTermsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsSearchTerms);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsSearchTerms);
     }
 
     public function shouldBeOnTheAdminReportsAbandonedCartsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsAbandonedCArts);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsAbandonedCArts);
     }
 
     public function shouldBeOnTheAdminReportsNewsletterProblemReportsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsNewsletterProblemReports);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsNewsletterProblemReports);
     }
 
     public function shouldBeOnTheAdminReportsByCustomersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsByCustomers);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsByCustomers);
     }
 
     public function shouldBeOnTheAdminReportsByProductsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsByProducts);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsByProducts);
     }
 
     public function shouldBeOnTheAdminReportsOrdersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsOrders);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsOrders);
     }
 
     public function shouldBeOnTheAdminReportsTaxPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsTax);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsTax);
     }
 
     public function shouldBeOnTheAdminReportsInvoicedPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsInvoiced);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsInvoiced);
     }
 
     public function shouldBeOnTheAdminReportsShippingPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsShipping);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsShipping);
     }
 
     public function shouldBeOnTheAdminReportsRefundsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsRefunds);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsRefunds);
     }
 
     public function shouldBeOnTheAdminReportsCouponsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsCoupons);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsCoupons);
     }
 
     public function shouldBeOnTheAdminReportsPayPalSettlementPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsPayPalSettlement);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsPayPalSettlement);
     }
 
     public function shouldBeOnTheAdminReportsBraintreeSettlementPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsBraintreeSettlement);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsBraintreeSettlement);
     }
 
     public function shouldBeOnTheAdminReportsOrderTotalPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsOrderTotal);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsOrderTotal);
     }
 
     public function shouldBeOnTheAdminReportsOrderCountPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsOrderCount);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsOrderCount);
     }
 
     public function shouldBeOnTheAdminReportsNewPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsNew);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsNew);
     }
 
     public function shouldBeOnTheAdminReportsViewsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsViews);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsViews);
     }
 
     public function shouldBeOnTheAdminReportsBestsellersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsBestsellers);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsBestsellers);
     }
 
     public function shouldBeOnTheAdminReportsLowStockPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsLowStock);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsLowStock);
     }
 
     public function shouldBeOnTheAdminReportsOrderedPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsOrdered);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsOrdered);
     }
 
     public function shouldBeOnTheAdminReportsDownloadsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsDownloads);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsDownloads);
     }
 
     public function shouldBeOnTheAdminReportRefreshStatisticsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminReportsRefreshStatistics);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminReportsRefreshStatistics);
     }
 
     // Stores
     public function shouldBeOnTheAdminStoresAllStoresPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresAllStores);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresAllStores);
     }
 
     public function shouldBeOnTheAdminStoresConfigurationPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresConfiguration);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresConfiguration);
     }
 
     public function shouldBeOnTheAdminStoresTermsAndConditionsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresTermsAndConditions);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresTermsAndConditions);
     }
 
     public function shouldBeOnTheAdminStoresOrderStatusPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresOrderStatus);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresOrderStatus);
     }
 
     public function shouldBeOnTheAdminStoresTaxRulesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresTaxRules);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresTaxRules);
     }
 
     public function shouldBeOnTheAdminStoresTaxZonesAndRatesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresTaxZonesAndRates);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresTaxZonesAndRates);
     }
 
     public function shouldBeOnTheAdminStoresCurrencyRatesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresCurrencyRates);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresCurrencyRates);
     }
 
     public function shouldBeOnTheAdminStoresCurrencySymbolsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresCurrencySymbols);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresCurrencySymbols);
     }
 
     public function shouldBeOnTheAdminStoresProductPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresProduct);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresProduct);
     }
 
     public function shouldBeOnTheAdminStoresAttributeSetPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresAttributeSet);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresAttributeSet);
     }
 
     public function shouldBeOnTheAdminStoresRatingPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresRating);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresRating);
     }
 
     public function shouldBeOnTheAdminStoresCustomerGroupsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminStoresCustomerGroups);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminStoresCustomerGroups);
     }
 
     // System
     public function shouldBeOnTheAdminSystemImportPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemImport);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemImport);
     }
 
     public function shouldBeOnTheAdminSystemExportPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemExport);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemExport);
     }
 
     public function shouldBeOnTheAdminSystemImportExportTaxRatesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemImportExportTaxRates);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemImportExportTaxRates);
     }
 
     public function shouldBeOnTheAdminSystemImportHistoryPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemImportHistory);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemImportHistory);
     }
 
     public function shouldBeOnTheAdminSystemIntegrationsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemIntegrations);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemIntegrations);
     }
 
     public function shouldBeOnTheAdminSystemCacheManagementPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemCacheManagement);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemCacheManagement);
     }
 
     public function shouldBeOnTheAdminSystemBackupsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemBackups);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemBackups);
     }
 
     public function shouldBeOnTheAdminSystemIndexManagementPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemIndexManagement);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemIndexManagement);
     }
 
     public function shouldBeOnTheAdminSystemWebSetupWizardPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemWebSetupWizard);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemWebSetupWizard);
     }
 
     public function shouldBeOnTheAdminSystemAllUsersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemAllUsers);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemAllUsers);
     }
 
     public function shouldBeOnTheAdminSystemLockedUsersPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemLockedUsers);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemLockedUsers);
     }
 
     public function shouldBeOnTheAdminSystemUserRolesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemUserRoles);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemUserRoles);
     }
 
     public function shouldBeOnTheAdminSystemNotificationsPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemNotifications);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemNotifications);
     }
 
     public function shouldBeOnTheAdminSystemCustomVariablesPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemCustomVariables);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemCustomVariables);
     }
 
     public function shouldBeOnTheAdminSystemManageEncryptionKeyPage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminSystemManageEncryptionKey);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminSystemManageEncryptionKey);
     }
 
     public function shouldBeOnTheAdminFindPartnersAndExtensionsPage() {
         $I = $this;
-        $I->seeCurrentUrlEquals(\Page\Acceptance\AdminURLList::$adminFindPartnersAndExtensions);
+        $I->seeInCurrentUrl(\Page\Acceptance\AdminURLList::$adminFindPartnersAndExtensions);
     }
 
     // Login Helpers
